@@ -1,0 +1,236 @@
+:root {
+  --page-bg: #101222;
+  --accent: #b09aff;
+  --muted: #b5b6c8;
+}
+
+body {
+  background: var(--page-bg);
+  color: #f7f7fc;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand span,
+.accent {
+  color: var(--accent);
+}
+
+.nav-link {
+  color: var(--muted);
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.btn-brand {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #171126;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-brand:hover {
+  background: #c4b3ff;
+  border-color: #c4b3ff;
+  color: #171126;
+  transform: translateY(-2px);
+}
+
+.hero {
+  padding-block: clamp(3rem, 7vw, 7rem) !important;
+}
+
+.hero-badge {
+  background: rgba(176, 154, 255, 0.12);
+  color: var(--accent);
+  letter-spacing: 2px;
+  border: 1px solid rgba(176, 154, 255, 0.25);
+}
+
+.hero h1 {
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  color: var(--muted);
+  max-width: 460px;
+  line-height: 1.8;
+}
+
+.product-visual {
+  max-width: 510px;
+  padding: 20px;
+  background: radial-gradient(ellipse at center, #443567, #1a1c30 70%);
+  border-radius: 36px;
+}
+
+.product-label {
+  background: #101222;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+
+.feature-card {
+  background: #1a1c30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.feature-number {
+  width: 48px;
+  height: 48px;
+  background: rgba(176, 154, 255, 0.12);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.feature-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.shop-visual {
+  background: #1a1c30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color 0.2s;
+}
+
+.shop-visual[data-color="Lavender"] {
+  background: #443567;
+}
+
+.shop-visual[data-color="Sand"] {
+  background: #655443;
+}
+
+.shop-visual img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.quantity-select {
+  width: 90px;
+  padding-block: 12px;
+  background-color: #1a1c30;
+  color: #f7f7fc;
+  border-color: #53566d;
+}
+.review-card {
+  background: #1a1c30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.review-text {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: rgba(176, 154, 255, 0.15);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.review-note {
+  color: var(--muted);
+}
+.soniq-faq {
+  --bs-accordion-color: var(--muted);
+  --bs-accordion-bg: #1a1c30;
+  --bs-accordion-border-color: rgba(255, 255, 255, 0.12);
+  --bs-accordion-btn-color: #f7f7fc;
+  --bs-accordion-active-color: var(--accent);
+  --bs-accordion-active-bg: #25213b;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 3px rgba(176, 154, 255, 0.3);
+}
+
+.soniq-faq .accordion-item {
+  border: 1px solid var(--bs-accordion-border-color);
+}
+
+.soniq-faq .accordion-button {
+  padding: 22px;
+  font-weight: 600;
+}
+
+.soniq-faq .accordion-body {
+  padding: 0 22px 22px;
+  line-height: 1.8;
+}
+
+.site-footer {
+  background: #0c0e1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand {
+  color: #f7f7fc;
+}
+
+.footer-text {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.footer-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.newsletter-input {
+  flex: 1 1 180px;
+  width: auto;
+  min-width: 0;
+  background: #1a1c30;
+  border: 1px solid #53566d;
+  border-radius: 50px;
+  padding: 12px 18px;
+  color: #f7f7fc;
+}
+
+.newsletter-input::placeholder {
+  color: var(--muted);
+}
+
+.newsletter-input:focus {
+  background: #1a1c30;
+  color: #f7f7fc;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(176, 154, 255, 0.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
